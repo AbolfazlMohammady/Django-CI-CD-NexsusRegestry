@@ -10,7 +10,7 @@ NC='\033[0m'
 NEW_USER="root"                         # 👤 نام کاربر جدید
 SSH_KEY="MUYIpbJHLGbpe+OlKqZsoUgUXHYFP5kqBgp/dE2TCnw"          # 🔐 کلید عمومی SSH
 TIMEZONE="Asia/Tehran"                     # 🌍 تایم‌زون
-SSH_PORT="22"                             # 🔁 پورت جدید SSH
+SSH_PORT="2263"                             # 🔁 پورت جدید SSH
 
 LOG_FILE="hardening.log"
 SSH_CONFIG_FILE="/etc/ssh/sshd_config"
