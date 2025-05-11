@@ -7,10 +7,10 @@ YELLOW='\033[1;33m'
 NC='\033[0m'
 
 # ---------- تنظیمات قابل تغییر ----------
-NEW_USER="abolfazl"                         # 👤 نام کاربر جدید
-SSH_KEY="ssh-rsa AAAA...your-key"          # 🔐 کلید عمومی SSH
+NEW_USER="root"                         # 👤 نام کاربر جدید
+SSH_KEY="MUYIpbJHLGbpe+OlKqZsoUgUXHYFP5kqBgp/dE2TCnw"          # 🔐 کلید عمومی SSH
 TIMEZONE="Asia/Tehran"                     # 🌍 تایم‌زون
-SSH_PORT="2222"                             # 🔁 پورت جدید SSH
+SSH_PORT="22"                             # 🔁 پورت جدید SSH
 
 LOG_FILE="hardening.log"
 SSH_CONFIG_FILE="/etc/ssh/sshd_config"
