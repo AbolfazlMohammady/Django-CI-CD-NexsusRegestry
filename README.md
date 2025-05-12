@@ -12,10 +12,6 @@
 ssh-keygen -t rsa -b 4096 -C "abolfazlking22@gmail.com"
 ```
 
-```
-
-```
-
 #### 1. مراحل دریافت Public SSH Key
 
 ### 1.1 ایجاد کلید SSH
@@ -211,8 +207,4 @@ DNS که از شکن اوردیم
 
 ```
 docker pull nginx
-```
-
-```
-
 ```
