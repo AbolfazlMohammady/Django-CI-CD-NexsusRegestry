@@ -2,22 +2,15 @@
 
 ---
 
-## 1. مراحل دریافت Public SSH Key
-
-### 1.1 ایجاد کلید SSH
-
-برای دریافت Public Key سرور، ابتدا SSH Key جدید ایجاد می‌کنیم. دستور زیر را وارد کنید:
-
-```bash
-ssh-keygen -t rsa -b 4096 -C "abolfazlking22@gmail.com"
-```
-
 #### 1. مراحل دریافت Public SSH Key
 
 ### 1.1 ایجاد کلید SSH
 
 برای دریافت Public Key سرور، ابتدا SSH Key جدید ایجاد می‌کنیم. دستور زیر را وارد کنید:
 
+```
+ssh-keygen -t rsa -b 4096 -C "abolfazlking22@gmail.com"
+```
 
 ### 1.2 مشاهده کلید‌ها
 
