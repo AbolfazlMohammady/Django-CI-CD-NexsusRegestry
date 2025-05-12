@@ -68,7 +68,13 @@ git clone git@github.com:AbolfazlMohammady/Django-CI-CD-NexsusRegestry.git
 در داخل دایرکتوری پروژه، اسکریپت را اجرا می‌کنیم تا آخرین تغییرات را از گیت دریافت کنیم:
 
 ```bash
-git pull origin
+git stash
+git pull origin main
+```
+
+```
+git add .
+git commit -m "Save local changes before pull"
 git pull origin main
 ```
 
