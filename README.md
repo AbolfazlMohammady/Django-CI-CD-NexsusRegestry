@@ -2,6 +2,13 @@
 
 ---
 
+# قبل هر کاری بعد وارد شدن
+
+```
+sudo apt update && sudo apt upgrade -y
+
+```
+
 #### 1. مراحل دریافت Public SSH Key
 
 ### 1.1 ایجاد کلید SSH
