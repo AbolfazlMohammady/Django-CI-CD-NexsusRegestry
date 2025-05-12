@@ -370,14 +370,19 @@ timedatectl | grep Time | cut -d ":" -f2 | cut -d " " -f2
 }
 
 # bashrc configuration --------------------------------------------------------------
-curl https://store.dockerme.ir/Software/bashrc -o /root/.bashrc
+# دانلود فایل Lynis و ذخیره در /opt
+wget https://downloads.cisofy.com/lynis/lynis.tar.gz -O /opt/lynis.tar.gz
 
-# lynis audit tools for Hardening check --------------------------------------------
-if [ ! -d  "/opt/lynis" ]
-then
-   curl https://downloads.cisofy.com/lynis/lynis-3.0.6.tar.gz -o /opt/lynis.tar.gz
-   cd /opt ; tar -xzf lynis.tar.gz ; rm -rf /opt/lynis.tar.gz
-fi
-cd /opt/lynis
+# رفتن به دایرکتوری /opt
+cd /opt
+
+# استخراج فایل فشرده
+tar -xvzf lynis.tar.gz
+
+# ورود به دایرکتوری استخراج‌شده
+cd lynis
+
+# اجرای اسکن امنیتی کامل سیستم
 ./lynis audit system
+
 #-----------------------------------------------------------------------------------
