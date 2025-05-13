@@ -958,3 +958,500 @@ tar: Child returned status 1
 tar: Error is not recoverable: exiting now
 ./hardening.sh: line 383: cd: lynis: No such file or directory
 ./hardening.sh: line 386: ./lynis: No such file or directory
+Info: ------------------------------------
+DNS Address:
+nameserver 8.8.8.8
+nameserver 9.9.9.9
+Hostname: devopshobbieslearning.com
+OS Info:
+Distributor ID:	Ubuntu
+Description:	Ubuntu 24.04.2 LTS
+Release:	24.04
+Codename:	noble
+ssh port: 22
+------------------------------------------
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 https://mirror.hetzner.com/ubuntu/packages noble InRelease
+Hit:2 https://mirror.hetzner.com/ubuntu/packages noble-updates InRelease
+Hit:3 https://mirror.hetzner.com/ubuntu/packages noble-backports InRelease
+Hit:4 https://mirror.hetzner.com/ubuntu/security noble-security InRelease
+Hit:5 https://download.docker.com/linux/ubuntu noble InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following upgrades have been deferred due to phasing:
+  grub-common grub-pc-bin grub2-common
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Package 'snapd' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Package 'snapd' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+wget is already the newest version (1.21.4-1ubuntu4.1).
+git is already the newest version (1:2.43.0-1ubuntu7.2).
+vim is already the newest version (2:9.1.0016-1ubuntu7.8).
+nano is already the newest version (7.2-2ubuntu0.1).
+bash-completion is already the newest version (1:2.11-8).
+curl is already the newest version (8.5.0-2ubuntu10.6).
+htop is already the newest version (3.3.0-4build1).
+iftop is already the newest version (1.0~pre4-9build2).
+jq is already the newest version (1.7.1-3build1).
+ncdu is already the newest version (1.19-0.1).
+unzip is already the newest version (6.0-28ubuntu4.1).
+net-tools is already the newest version (2.10-0.1ubuntu4).
+dnsutils is already the newest version (1:9.18.30-0ubuntu0.24.04.2).
+atop is already the newest version (2.10.0-2ubuntu2).
+sudo is already the newest version (1.9.15p5-3ubuntu5).
+ntp is already the newest version (1:4.2.8p15+dfsg-2~1.2.2+dfsg1-4build2).
+fail2ban is already the newest version (1.0.2-3ubuntu0.1).
+software-properties-common is already the newest version (0.99.49.2).
+apache2-utils is already the newest version (2.4.58-1ubuntu8.6).
+tcpdump is already the newest version (4.99.4-3ubuntu4).
+telnet is already the newest version (0.17+2.5-3ubuntu4).
+axel is already the newest version (2.17.13-1build2).
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+ [30;48;5;56m [1m [38;5;15mHostname Configuration [0m
+ [30;48;5;56m [1m [38;5;15mTimeout Setting [0m
+#!/bin/bash
+### 300 seconds == 5 minutes ##
+TMOUT=300
+readonly TMOUT
+export TMOUT
+ [30;48;5;56m [1m [38;5;15mSysctl Configuration [0m
+net.ipv4.tcp_fin_timeout = 30
+sysctl: cannot stat /proc/sys/net/ipv4/tcp_tw_recycle: No such file or directory
+net.ipv4.tcp_tw_reuse = 1
+net.netfilter.nf_conntrack_tcp_timeout_established = 3600
+fs.file-max = 500000
+vm.max_map_count = 262144
+net.ipv4.ip_nonlocal_bind = 1
+net.bridge.bridge-nf-call-iptables = 1
+net.bridge.bridge-nf-call-ip6tables = 1
+net.ipv4.ip_forward = 1
+fs.suid_dumpable = 0
+kernel.core_uses_pid = 1
+kernel.dmesg_restrict = 1
+kernel.kptr_restrict = 2
+kernel.sysrq = 0
+net.ipv4.conf.all.log_martians = 1
+net.ipv6.conf.all.accept_redirects = 0
+net.ipv6.conf.default.accept_redirects = 0
+net.ipv4.conf.all.forwarding = 1
+net.ipv4.conf.all.send_redirects = 0
+net.ipv4.conf.default.accept_redirects = 0
+net.ipv4.conf.default.accept_source_route = 0
+net.ipv4.conf.default.log_martians = 1
+net.ipv4.conf.all.accept_redirects = 0
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+net.ipv4.conf.all.rp_filter = 1
+kernel.yama.ptrace_scope = 1
+net.ipv4.tcp_fin_timeout = 30
+sysctl: cannot stat /proc/sys/net/ipv4/tcp_tw_recycle: No such file or directory
+net.ipv4.tcp_tw_reuse = 1
+net.netfilter.nf_conntrack_tcp_timeout_established = 3600
+fs.file-max = 500000
+vm.max_map_count = 262144
+net.ipv4.ip_nonlocal_bind = 1
+net.bridge.bridge-nf-call-iptables = 1
+net.bridge.bridge-nf-call-ip6tables = 1
+net.ipv4.ip_forward = 1
+fs.suid_dumpable = 0
+kernel.core_uses_pid = 1
+kernel.dmesg_restrict = 1
+kernel.kptr_restrict = 2
+kernel.sysrq = 0
+net.ipv4.conf.all.log_martians = 1
+net.ipv6.conf.all.accept_redirects = 0
+net.ipv6.conf.default.accept_redirects = 0
+net.ipv4.conf.all.forwarding = 1
+net.ipv4.conf.all.send_redirects = 0
+net.ipv4.conf.default.accept_redirects = 0
+net.ipv4.conf.default.accept_source_route = 0
+net.ipv4.conf.default.log_martians = 1
+net.ipv4.conf.all.accept_redirects = 0
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+net.ipv4.conf.all.rp_filter = 1
+kernel.yama.ptrace_scope = 1
+net.ipv4.tcp_fin_timeout = 30
+sysctl: cannot stat /proc/sys/net/ipv4/tcp_tw_recycle: No such file or directory
+net.ipv4.tcp_tw_reuse = 1
+net.netfilter.nf_conntrack_tcp_timeout_established = 3600
+fs.file-max = 500000
+vm.max_map_count = 262144
+net.ipv4.ip_nonlocal_bind = 1
+net.bridge.bridge-nf-call-iptables = 1
+net.bridge.bridge-nf-call-ip6tables = 1
+net.ipv4.ip_forward = 1
+fs.suid_dumpable = 0
+kernel.core_uses_pid = 1
+kernel.dmesg_restrict = 1
+kernel.kptr_restrict = 2
+kernel.sysrq = 0
+net.ipv4.conf.all.log_martians = 1
+net.ipv6.conf.all.accept_redirects = 0
+net.ipv6.conf.default.accept_redirects = 0
+net.ipv4.conf.all.forwarding = 1
+net.ipv4.conf.all.send_redirects = 0
+net.ipv4.conf.default.accept_redirects = 0
+net.ipv4.conf.default.accept_source_route = 0
+net.ipv4.conf.default.log_martians = 1
+net.ipv4.conf.all.accept_redirects = 0
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+net.ipv4.conf.all.rp_filter = 1
+kernel.yama.ptrace_scope = 1
+net.ipv4.tcp_fin_timeout = 30
+sysctl: cannot stat /proc/sys/net/ipv4/tcp_tw_recycle: No such file or directory
+net.ipv4.tcp_tw_reuse = 1
+net.netfilter.nf_conntrack_tcp_timeout_established = 3600
+fs.file-max = 500000
+vm.max_map_count = 262144
+net.ipv4.ip_nonlocal_bind = 1
+net.bridge.bridge-nf-call-iptables = 1
+net.bridge.bridge-nf-call-ip6tables = 1
+net.ipv4.ip_forward = 1
+fs.suid_dumpable = 0
+kernel.core_uses_pid = 1
+kernel.dmesg_restrict = 1
+kernel.kptr_restrict = 2
+kernel.sysrq = 0
+net.ipv4.conf.all.log_martians = 1
+net.ipv6.conf.all.accept_redirects = 0
+net.ipv6.conf.default.accept_redirects = 0
+net.ipv4.conf.all.forwarding = 1
+net.ipv4.conf.all.send_redirects = 0
+net.ipv4.conf.default.accept_redirects = 0
+net.ipv4.conf.default.accept_source_route = 0
+net.ipv4.conf.default.log_martians = 1
+net.ipv4.conf.all.accept_redirects = 0
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+net.ipv4.conf.all.rp_filter = 1
+kernel.yama.ptrace_scope = 1
+ [30;48;5;56m [1m [38;5;15mpostfix Service: disable, stop and mask [0m
+Unit /etc/systemd/system/postfix.service is masked, ignoring.
+The unit files have no installation config (WantedBy=, RequiredBy=, UpheldBy=,
+Also=, or Alias= settings in the [Install] section, and DefaultInstance= for
+template units). This means they are not meant to be enabled or disabled using systemctl.
+ 
+Possible reasons for having these kinds of units are:
+• A unit may be statically enabled by being symlinked from another unit's
+  .wants/, .requires/, or .upholds/ directory.
+• A unit's purpose may be to act as a helper for some other unit which has
+  a requirement dependency on it.
+• A unit may be started when needed via activation (socket, path, timer,
+  D-Bus, udev, scripted systemctl call, ...).
+• In case of template units, the unit is meant to be enabled with some
+  instance name specified.
+ [30;48;5;56m [1m [38;5;15mfirewalld Service: disable, stop and mask [0m
+Unit /etc/systemd/system/firewalld.service is masked, ignoring.
+The unit files have no installation config (WantedBy=, RequiredBy=, UpheldBy=,
+Also=, or Alias= settings in the [Install] section, and DefaultInstance= for
+template units). This means they are not meant to be enabled or disabled using systemctl.
+ 
+Possible reasons for having these kinds of units are:
+• A unit may be statically enabled by being symlinked from another unit's
+  .wants/, .requires/, or .upholds/ directory.
+• A unit's purpose may be to act as a helper for some other unit which has
+  a requirement dependency on it.
+• A unit may be started when needed via activation (socket, path, timer,
+  D-Bus, udev, scripted systemctl call, ...).
+• In case of template units, the unit is meant to be enabled with some
+  instance name specified.
+ [30;48;5;56m [1m [38;5;15mufw Service: disable, stop and mask [0m
+Synchronizing state of ufw.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install disable ufw
+Unit /etc/systemd/system/ufw.service is masked, ignoring.
+The unit files have no installation config (WantedBy=, RequiredBy=, UpheldBy=,
+Also=, or Alias= settings in the [Install] section, and DefaultInstance= for
+template units). This means they are not meant to be enabled or disabled using systemctl.
+ 
+Possible reasons for having these kinds of units are:
+• A unit may be statically enabled by being symlinked from another unit's
+  .wants/, .requires/, or .upholds/ directory.
+• A unit's purpose may be to act as a helper for some other unit which has
+  a requirement dependency on it.
+• A unit may be started when needed via activation (socket, path, timer,
+  D-Bus, udev, scripted systemctl call, ...).
+• In case of template units, the unit is meant to be enabled with some
+  instance name specified.
+Failed to enable unit: Refusing to operate on alias name or linked unit file: sshd.service
+[1m [96m sshd service: [30;48;5;82m [5mRunning [0m
+Synchronizing state of fail2ban.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable fail2ban
+[1m [96m fail2ban service: [30;48;5;82m [5mRunning [0m
+Status
+|- Number of jail:	1
+`- Jail list:	sshd
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  netfilter-persistent
+The following packages will be REMOVED:
+  ufw
+The following NEW packages will be installed:
+  iptables-persistent netfilter-persistent
+0 upgraded, 2 newly installed, 1 to remove and 3 not upgraded.
+Need to get 14.3 kB of archives.
+After this operation, 780 kB disk space will be freed.
+Get:1 https://mirror.hetzner.com/ubuntu/packages noble/universe amd64 netfilter-persistent all 1.0.20 [7,402 B]
+Get:2 https://mirror.hetzner.com/ubuntu/packages noble/universe amd64 iptables-persistent all 1.0.20 [6,946 B]
+Preconfiguring packages ...
+Fetched 14.3 kB in 0s (155 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40704 files and directories currently installed.)
+Removing ufw (0.36.2-6) ...
+Selecting previously unselected package netfilter-persistent.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40609 files and directories currently installed.)
+Preparing to unpack .../netfilter-persistent_1.0.20_all.deb ...
+Unpacking netfilter-persistent (1.0.20) ...
+Selecting previously unselected package iptables-persistent.
+Preparing to unpack .../iptables-persistent_1.0.20_all.deb ...
+Unpacking iptables-persistent (1.0.20) ...
+Setting up netfilter-persistent (1.0.20) ...
+Setting up iptables-persistent (1.0.20) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+CHECK_INPUT  0    --  0.0.0.0/0            0.0.0.0/0           
+DROP       0    --  0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+CHECK_OUTPUT  0    --  0.0.0.0/0            0.0.0.0/0           
+DROP       0    --  0.0.0.0/0            0.0.0.0/0           
+
+Chain CHECK_INPUT (1 references)
+target     prot opt source               destination         
+ACCEPT     0    --  0.0.0.0/0            0.0.0.0/0            state RELATED,ESTABLISHED
+ACCEPT     0    --  0.0.0.0/0            0.0.0.0/0           
+ACCEPT     0    --  0.0.0.0/0            0.0.0.0/0           
+ACCEPT     6    --  0.0.0.0/0            0.0.0.0/0            tcp dpt:22
+ACCEPT     6    --  0.0.0.0/0            0.0.0.0/0            tcp dpt:443
+ACCEPT     6    --  0.0.0.0/0            0.0.0.0/0            tcp dpt:80
+ACCEPT     0    --  192.168.0.0/16       0.0.0.0/0           
+ACCEPT     0    --  172.17.0.0/16        0.0.0.0/0           
+ACCEPT     0    --  87.107.174.244       0.0.0.0/0            /* The DockerMe Server Ip is Trusted */
+
+Chain CHECK_OUTPUT (1 references)
+target     prot opt source               destination         
+ACCEPT     0    --  0.0.0.0/0            0.0.0.0/0            state RELATED,ESTABLISHED
+ACCEPT     0    --  0.0.0.0/0            0.0.0.0/0           
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+CHECK_INPUT  0    --  0.0.0.0/0            0.0.0.0/0           
+DROP       0    --  0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+CHECK_OUTPUT  0    --  0.0.0.0/0            0.0.0.0/0           
+DROP       0    --  0.0.0.0/0            0.0.0.0/0           
+
+Chain CHECK_INPUT (1 references)
+target     prot opt source               destination         
+ACCEPT     0    --  0.0.0.0/0            0.0.0.0/0            state RELATED,ESTABLISHED
+ACCEPT     0    --  0.0.0.0/0            0.0.0.0/0           
+ACCEPT     0    --  0.0.0.0/0            0.0.0.0/0           
+ACCEPT     6    --  0.0.0.0/0            0.0.0.0/0            tcp dpt:22
+ACCEPT     6    --  0.0.0.0/0            0.0.0.0/0            tcp dpt:443
+ACCEPT     6    --  0.0.0.0/0            0.0.0.0/0            tcp dpt:80
+ACCEPT     0    --  192.168.0.0/16       0.0.0.0/0           
+ACCEPT     0    --  172.17.0.0/16        0.0.0.0/0           
+ACCEPT     0    --  87.107.174.244       0.0.0.0/0            /* The DockerMe Server Ip is Trusted */
+
+Chain CHECK_OUTPUT (1 references)
+target     prot opt source               destination         
+ACCEPT     0    --  0.0.0.0/0            0.0.0.0/0            state RELATED,ESTABLISHED
+ACCEPT     0    --  0.0.0.0/0            0.0.0.0/0           
+ [30;48;5;56m [1m [38;5;15mDocker Installation[0m
+/usr/bin/docker
+Synchronizing state of docker.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable docker
+[1m [96m docker service: [30;48;5;82m [5mRunning [0m
+file exist
+[Service]
+ExecStart=
+ExecStart=/usr/bin/dockerd --registry-mirror https://docker.jamko.ir --log-opt max-size=500m --log-opt max-file=5
+[1m [96m docker service: [30;48;5;82m [5mRunning [0m
+ [30;48;5;56m [1m [38;5;15mdocker-compose Installation[0m
+/usr/local/bin/docker-compose
+Docker Compose version v2.24.2
+nameserver 8.8.8.8
+nameserver 9.9.9.9
+nameserver 8.8.8.8
+nameserver 9.9.9.9
+# If you change this file, run 'update-grub' afterwards to update
+# /boot/grub/grub.cfg.
+# For full documentation of the options in this file, see:
+#   info -f grub -n 'Simple configuration'
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT_STYLE=hidden
+GRUB_TIMEOUT=0
+GRUB_DISTRIBUTOR=`( . /etc/os-release; echo ${NAME:-Ubuntu} ) 2>/dev/null || echo Ubuntu`
+GRUB_CMDLINE_LINUX_DEFAULT="consoleblank=0 systemd.show_status=true console=tty1 console=ttyS0"
+GRUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount=1"
+
+# If your computer has multiple operating systems installed, then you
+# probably want to run os-prober. However, if your computer is a host
+# for guest OSes installed via LVM or raw disk devices, running
+# os-prober can cause damage to those guest OSes as it mounts
+# filesystems to look for things.
+#GRUB_DISABLE_OS_PROBER=false
+
+# Uncomment to enable BadRAM filtering, modify to suit your needs
+# This works with Linux (no patch required) and with any kernel that obtains
+# the memory map information from GRUB (GNU Mach, kernel of FreeBSD ...)
+#GRUB_BADRAM="0x01234567,0xfefefefe,0x89abcdef,0xefefefef"
+
+# Uncomment to disable graphical terminal
+GRUB_TERMINAL=console
+
+# The resolution used on graphical terminal
+# note that you can use only modes which your graphic card supports via VBE
+# you can see them in real GRUB with the command `vbeinfo'
+#GRUB_GFXMODE=640x480
+
+# Uncomment if you don't want GRUB to pass "root=UUID=xxx" parameter to Linux
+#GRUB_DISABLE_LINUX_UUID=true
+
+# Uncomment to disable generation of recovery mode menu entries
+#GRUB_DISABLE_RECOVERY="true"
+
+# Uncomment to get a beep at grub start
+#GRUB_INIT_TUNE="480 440 1"
+# If you change this file, run 'update-grub' afterwards to update
+# /boot/grub/grub.cfg.
+# For full documentation of the options in this file, see:
+#   info -f grub -n 'Simple configuration'
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT_STYLE=hidden
+GRUB_TIMEOUT=0
+GRUB_DISTRIBUTOR=`( . /etc/os-release; echo ${NAME:-Ubuntu} ) 2>/dev/null || echo Ubuntu`
+GRUB_CMDLINE_LINUX_DEFAULT="consoleblank=0 systemd.show_status=true console=tty1 console=ttyS0"
+GRUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount=1"
+
+# If your computer has multiple operating systems installed, then you
+# probably want to run os-prober. However, if your computer is a host
+# for guest OSes installed via LVM or raw disk devices, running
+# os-prober can cause damage to those guest OSes as it mounts
+# filesystems to look for things.
+#GRUB_DISABLE_OS_PROBER=false
+
+# Uncomment to enable BadRAM filtering, modify to suit your needs
+# This works with Linux (no patch required) and with any kernel that obtains
+# the memory map information from GRUB (GNU Mach, kernel of FreeBSD ...)
+#GRUB_BADRAM="0x01234567,0xfefefefe,0x89abcdef,0xefefefef"
+
+# Uncomment to disable graphical terminal
+GRUB_TERMINAL=console
+
+# The resolution used on graphical terminal
+# note that you can use only modes which your graphic card supports via VBE
+# you can see them in real GRUB with the command `vbeinfo'
+#GRUB_GFXMODE=640x480
+
+# Uncomment if you don't want GRUB to pass "root=UUID=xxx" parameter to Linux
+#GRUB_DISABLE_LINUX_UUID=true
+
+# Uncomment to disable generation of recovery mode menu entries
+#GRUB_DISABLE_RECOVERY="true"
+
+# Uncomment to get a beep at grub start
+#GRUB_INIT_TUNE="480 440 1"
+Sourcing file `/etc/default/grub'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-6.8.0-59-generic
+Found initrd image: /boot/initrd.img-6.8.0-59-generic
+Found linux image: /boot/vmlinuz-6.8.0-58-generic
+Found initrd image: /boot/initrd.img-6.8.0-58-generic
+Adding boot menu entry for UEFI Firmware Settings ...
+done
+#!/bin/bash
+iptables-restore /etc/iptables/rules.v4
+systemctl restart fail2ban.service
+systemctl restart docker.service
+exit 0
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ntp is already the newest version (1:4.2.8p15+dfsg-2~1.2.2+dfsg1-4build2).
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+Asia/Tehran
+Failed to enable unit: Refusing to operate on alias name or linked unit file: ntp.service
+[1m [96m ntp service: [30;48;5;82m [5mRunning [0m
+--2025-05-13 10:41:39--  https://downloads.cisofy.com/lynis/lynis.tar.gz
+Resolving downloads.cisofy.com (downloads.cisofy.com)... 89.41.171.41, 2a01:7c8:e001:1cb::c1d4
+Connecting to downloads.cisofy.com (downloads.cisofy.com)|89.41.171.41|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2025-05-13 10:41:40 ERROR 404: Not Found.
+
+
+gzip: stdin: unexpected end of file
+tar: Child returned status 1
+tar: Error is not recoverable: exiting now
+./hardening.sh: line 383: cd: lynis: No such file or directory
+./hardening.sh: line 386: ./lynis: No such file or directory
