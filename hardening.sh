@@ -8,7 +8,7 @@ NOW="$(date +"%Y-%m-%d_%H-%M-%S")"
 # Variable Section -------------------------------------------
 DOMAIN_NAME=devopshobbieslearning.com
 HostName=$DOMAIN_NAME
-SSH_PORT=1242
+SSH_PORT=22  
 BAC_DIR=/opt/backup/files_$NOW
 # docker config destination
 DOCKER_DEST=/etc/systemd/system/docker.service.d/
