@@ -396,3 +396,18 @@ docker-compose up --build -d
 sudo nano /etc/ssh/sshd_config
 
 ```
+
+## وقتی که پورت را عوض کردید و کار نکرد
+
+```
+sudo apt update
+sudo apt install ufw -y
+
+```
+
+```
+sudo ufw allow 22/tcp
+sudo ufw enable
+sudo ufw status verbose
+
+```
