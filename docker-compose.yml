@@ -7,6 +7,5 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./html:/usr/share/nginx/html
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
     restart: unless-stopped
