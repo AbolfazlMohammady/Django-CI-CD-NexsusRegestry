@@ -78,6 +78,11 @@ git commit -m "Save local changes before pull"
 git pull origin main
 ```
 
+```
+git fetch origin
+git reset --hard origin/main
+```
+
 ### 4.2 دادن اجازه به اسکریپت برای اجرا
 
 قبل از اجرای اسکریپت، باید به آن اجازه اجرا بدهیم:
@@ -380,6 +385,8 @@ git pull origin main
 docker-compose down
 docker-compose up --build -d
 ```
+
+
 
 ---
 
